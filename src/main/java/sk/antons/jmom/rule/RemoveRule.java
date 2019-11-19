@@ -19,7 +19,8 @@ import java.util.List;
 import sk.antons.json.JsonValue;
 
 /**
- *
+ * Removes specified paths value from given json. 
+ * 
  * @author antons
  */
 public class RemoveRule extends PathRule implements Rule {

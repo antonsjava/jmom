@@ -26,7 +26,7 @@ import sk.antons.jmom.rule.Rule;
 import sk.antons.json.JsonValue;
 
 /**
- *
+ * Class collects list of rules, which transforms json objects. 
  * @author antons
  */
 public class Jmom implements Rule {
@@ -46,31 +46,66 @@ public class Jmom implements Rule {
         }
     }
     
+    /**
+     * Add rule to list.
+     * @param rule
+     * @return this
+     */
     public Jmom rule(Rule rule) {
         if(rule != null) rules.add(rule);
         return this;
     }
     
+    /**
+     * Add apply rule to list.
+     * @param rule role to apply
+     * @param path list of paths where rule must be applied
+     * @return this
+     */
     public Jmom apply(Rule rule, String... path) {
         rules.add(ApplyRule.instance(rule, path));
         return this;
     }
 
+    /**
+     * Add remove rule to list
+     * @param path list od paths which must be removed
+     * @return this
+     */
     public Jmom remove(String... path) {
         rules.add(RemoveRule.instance(path));
         return this;
     }
     
+    /**
+     * Add keepOnly rule to list
+     * @param path list of paths, which must be saved (other will be removed)
+     * @return this
+     */
     public Jmom keepOnly(String... path) {
         rules.add(KeepOnlyRule.instance(path));
         return this;
     }
     
+    /**
+     * Add add rule to list.
+     * @param path one path where a value must be added
+     * @param value value to be added
+     * @param replace true if value must replace existing value on path
+     * @return this
+     */
     public Jmom add(String path, JsonValue value, boolean replace) {
         rules.add(AddRule.instance(path, value, replace));
         return this;
     }
     
+    /**
+     * Add copy rule to list 
+     * @param frompath one path selecting source value
+     * @param topath one exact path selecting target 
+     * @param move true if value should be removed from source
+     * @return this
+     */
     public Jmom copy(String frompath, String topath, boolean move) {
         rules.add(CopyRule.instance(frompath, topath, move));
         return this;

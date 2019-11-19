@@ -23,6 +23,7 @@ import sk.antons.json.JsonObject;
 import sk.antons.json.JsonValue;
 
 /**
+ * Removes all except specified paths value from given json. 
  *
  * @author antons
  */

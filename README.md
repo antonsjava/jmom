@@ -46,8 +46,8 @@
   - "/foo/*/item" represents paths like "/foo/bar/item", "/foo/nobar/item", ....
   - "/foo/**/item" represents paths like "/foo/item", "/foo/bar/item", "/foo/bar/bar/item"....
 
- Data pointer can be postfixed with '|<int number>'. It moves path selected jsno node to parent 
- <int number> times. For example "**/config" selects all paths which ends with '/config' but 
+ Data pointer can be postfixed with '|{int number}'. It moves path selected jsno node to parent 
+ {int number} times. For example "**/config" selects all paths which ends with '/config' but 
  "**/config|1" selects direct parents of previous selections.
 
 ## Modification rules

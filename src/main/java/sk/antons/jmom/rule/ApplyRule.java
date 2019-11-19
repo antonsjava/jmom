@@ -19,6 +19,7 @@ import java.util.List;
 import sk.antons.json.JsonValue;
 
 /**
+ * Apply rule on specified path to given json object. 
  *
  * @author antons
  */

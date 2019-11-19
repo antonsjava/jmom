@@ -20,6 +20,7 @@ import sk.antons.jmom.util.PathUtil;
 import sk.antons.json.JsonValue;
 
 /**
+ * Copy/move specified path value from given json object to given json object. 
  *
  * @author antons
  */

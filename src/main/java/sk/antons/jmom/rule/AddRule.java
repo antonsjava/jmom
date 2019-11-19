@@ -20,7 +20,7 @@ import sk.antons.jmom.util.PathUtil;
 import sk.antons.json.JsonValue;
 
 /**
- *
+ * Add json value on specified path to given json object. 
  * @author antons
  */
 public class AddRule implements Rule {

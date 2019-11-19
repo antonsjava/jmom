@@ -18,9 +18,13 @@ package sk.antons.jmom.rule;
 import sk.antons.json.JsonValue;
 
 /**
- *
+ * An activity on json object. (like remove subpath, add value on subpath, ...) 
  * @author antons
  */
 public interface Rule {
+    /**
+     * Executes an activity on given json object.
+     * @param json 
+     */
     void apply(JsonValue json);
 }
