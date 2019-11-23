@@ -7,7 +7,7 @@
 
 ## Base of usage
 
- The library is based on antonsjava.json library, which is base for json
+ The library is based on antonsjava.[json](https://github.com/antonsjava/json) library, which is base for json
  manipulation. Json data are provided as instances of json API.
 
  Creating json API object from String.
