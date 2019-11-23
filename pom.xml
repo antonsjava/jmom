@@ -4,7 +4,7 @@
 
     <groupId>com.github.antonsjava</groupId>
     <artifactId>jmom</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>jmom</name>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.github.antonsjava</groupId>
             <artifactId>json</artifactId>
-            <version>1.7</version>
+            <version>1.8</version>
         </dependency>
 		<dependency>
 			<groupId>junit</groupId>
