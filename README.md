@@ -126,8 +126,8 @@
 
 ```
    <dependency>
-      <groupId>com.github.antonsjava</groupId>
+      <groupId>io.github.antonsjava</groupId>
       <artifactId>jmom</artifactId>
-      <version>1.1</version>
+      <version>LASTVERSION</version>
    </dependency>
 ```
